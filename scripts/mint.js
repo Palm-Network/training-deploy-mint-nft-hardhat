@@ -1,6 +1,6 @@
 require("dotenv").config();
 require("@nomiclabs/hardhat-ethers");
-const contract = require("../artifacts/contracts/NftFactory.sol/NftFactory.json");
+const contract = require("../artifacts/contracts/NFT.sol/NFT.json");
 const contractInterface = contract.abi;
 
 // https://hardhat.org/plugins/nomiclabs-hardhat-ethers.html#provider-object
@@ -14,7 +14,7 @@ wallet.provider = provider;
 const signer = wallet.connect(provider);
 
 // https://docs.ethers.io/v5/api/contract/contract
-const NftFactory = new ethers.Contract(
+const NFT = new ethers.Contract(
   process.env.TESTNET_CONTRACT_ADDRESS,
   contractInterface,
   signer
@@ -22,7 +22,7 @@ const NftFactory = new ethers.Contract(
 
 const main = () => {
   console.log("Waiting 5 blocks for confirmation...");
-  NftFactory
+  NFT
     .mintNFT(process.env.PUBLIC_KEY, tokenURI)    
     .then((tx) => tx.wait(5))
     .then((receipt) => console.log(`Your transaction is confirmed, its receipt is: ${receipt.transactionHash}`))
