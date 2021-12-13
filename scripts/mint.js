@@ -15,7 +15,7 @@ const signer = wallet.connect(provider);
 
 // https://docs.ethers.io/v5/api/contract/contract
 const NFT = new ethers.Contract(
-  process.env.TESTNET_CONTRACT_ADDRESS,
+  process.env.CONTRACT_ADDRESS,
   contractInterface,
   signer
 );

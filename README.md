@@ -1,8 +1,11 @@
 # Training material: How to mint an NFT on Palm
 
-Training code for Palm documentation. This repo aims at supporting those learning how to mint an NFT on Palm using `Hardhat` and `Ethers.js`
+Training code for Palm documentation. This repo aims at supporting those learning how to deploy an NFT contract and mint an NFT on Palm using `Hardhat` and `Ethers.js`
 
-This repo contains all the finished code explained at: https://docs.palm.io/HowTo/Mint-NFT-using-Hardhat
+This repo contains all the finished code explained at: 
+* https://docs.palm.io/HowTo/Deploy-using-Hardhat
+and at:
+* https://docs.palm.io/HowTo/Mint-NFT-using-Hardhat
 
 ### Installation
 
