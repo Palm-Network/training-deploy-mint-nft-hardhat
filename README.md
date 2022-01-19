@@ -9,7 +9,9 @@ and at:
 
 ### Installation
         
-        npm install
+    ```bash
+    npm install
+    ```
 
 ### Configuration
 
@@ -23,19 +25,27 @@ CONTRACT_ADDRESS
 
 #### Deploy contract to Palm Testnet:
         
-        npx hardhat run scripts/deploy.js --network palm_testnet
+    ```bash
+    npx hardhat run scripts/deploy.js --network palm_testnet
+    ```
         
 #### Deploy contract to Palm Mainnet:
         
-        npx hardhat run scripts/deploy.js --network palm_mainnet
+    ```bash
+    npx hardhat run scripts/deploy.js --network palm_mainnet
+    ```
         
 #### Mint NFT on Palm Testnet:
 
         
-        npx hardhat run scripts/mint.js --network palm_testnet
+    ```bash
+    npx hardhat run scripts/mint.js --network palm_testnet
+    ```
         
 
 #### Mint NFT on Palm Mainnet:
         
-        npx hardhat run scripts/mint.js --network palm_mainnet
+    ```bash
+    npx hardhat run scripts/mint.js --network palm_mainnet
+    ```
         
